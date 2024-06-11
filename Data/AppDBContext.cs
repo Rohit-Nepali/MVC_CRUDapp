@@ -11,7 +11,9 @@ namespace CRUDapplication.Data
         }
 
         //DB Context connects the sqlServer to this application
-        public DbSet<User> Teachers { get; set; }
-        public DbSet<User> Students { get; set; }
+        // User is the table and Teacher methods to control their actions
+
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }
